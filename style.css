@@ -1,0 +1,121 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red; 
+}
+
+.theme-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.theme-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.card-img-wrap {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 15px;
+    color: #777;
+}
+
+body.dark-theme .card p {
+    color: #bbb;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px black;
+}
+
+.card:hover .card-img-wrap img {
+    transform: scale(1.08);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin-top: 50px;
+    font-size: 14px;
+}
